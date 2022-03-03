@@ -3,5 +3,29 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "csc-ui-accessor": {
+      "projectType": "library",
+      "root": "projects/csc-ui-accessor",
+      "sourceRoot": "projects/csc-ui-accessor/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/csc-ui-accessor/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/csc-ui-accessor/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/csc-ui-accessor/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
+    }
+  },
+  "defaultProject": "csc-ui-accessor"
 }

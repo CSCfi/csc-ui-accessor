@@ -3,6 +3,12 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "csc-ui-accessor": [
+        "dist/csc-ui-accessor/csc-ui-accessor",
+        "dist/csc-ui-accessor"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

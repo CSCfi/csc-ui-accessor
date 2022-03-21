@@ -8,6 +8,7 @@ import {
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 @Directive({
   selector: '[cControl]',
+  host: { '(blur)': 'onTouched($event)' },
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,

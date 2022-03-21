@@ -19,7 +19,6 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 export class CControl implements ControlValueAccessor {
   @HostBinding('value') hostValue: any;
 
-  lastValue: any;
   private onChange = (value: any) => {};
   private onTouched = () => {};
 
@@ -34,7 +33,7 @@ export class CControl implements ControlValueAccessor {
   }
 
   writeValue(value: any) {
-    this.hostValue = this.lastValue = value == null ? '' : value;
+    this.hostValue = value;
   }
 
   registerOnChange(fn: (value: any) => void) {

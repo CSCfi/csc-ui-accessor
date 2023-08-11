@@ -10,11 +10,11 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v2
 
-    - name: Build project
-      run: npm run build
-
     - name: Install the dependencies
       run: npm ci
+
+    - name: Build project
+      run: npm run build
 
     - name: Initialise the NPM config
       run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN

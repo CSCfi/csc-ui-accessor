@@ -14,5 +14,11 @@
   },
   "npm": {
     "publish": true
+  },
+  "plugins": {
+    "@release-it/bumper": {
+      "in": "./projects/csc-ui-accessor/package.json",
+      "out": "./projects/csc-ui-accessor/package.json"
+    }
   }
 }

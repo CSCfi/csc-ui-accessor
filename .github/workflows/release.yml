@@ -10,7 +10,10 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v2
 
-    - name: Install the dependancies
+    - name: Build project
+      run: npm run build
+
+    - name: Install the dependencies
       run: npm ci
 
     - name: Initialise the NPM config

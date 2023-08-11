@@ -1,5 +1,5 @@
 {
-  "name": "csc-ui-modules",
+  "name": "csc-ui-accessor",
   "version": "0.0.14",
   "scripts": {
     "ng": "ng",

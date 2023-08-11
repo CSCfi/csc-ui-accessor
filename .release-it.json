@@ -13,7 +13,8 @@
     ]
   },
   "npm": {
-    "publish": true
+    "publish": true,
+    "publishPath": "dist/csc-ui-accessor"
   },
   "plugins": {
     "@release-it/bumper": {
